@@ -1,0 +1,36 @@
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ywrLSeDVH5U" frameborder="0" allowfullscreen></iframe>
+
+        
+    <!-- Agrega tu clave de API de YouTube en el atributo "src" -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+
+
+
+    <script>
+        function confirmarPago() {
+            var metodoPago = $("input[name='metodo_pago']:checked").val();
+
+            if (metodoPago === "tarjeta_credito") {
+                // datos de la tarjeta de credito
+                paypal.Buttons({
+                    createOrder: function(data, actions) {
+                        return actions.order.create({
+                            purchase_units: [{
+                                amount: {
+                                    value: '500.00' 
+                                }
+                            }]
+                        });
+                    },
+                    onApprove: function(data, actions) {
+                        return actions.order.capture().then(function(details) {
+                            alert('¡Pago completado por ' + details.payer.name.given_name + '!');
+                            window.location.href = 'menu.php'; // Redirige a menu.php
+                        });
+                    }
+                }).render('#paypal-button-container');
+            }
+        }
+    </script>

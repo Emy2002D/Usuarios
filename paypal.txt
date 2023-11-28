@@ -1,0 +1,27 @@
+sb-vbojh15190352@business.example.com
+Login Info
+Sandbox URL
+https://sandbox.paypal.com
+Email
+sb-vbojh15190352@business.example.com
+Password
+9SR/n5d8
+Change password
+
+
+
+
+--------------------------------
+
+
+
+sb-gse5m28227751@personal.example.com
+Successfully updated balance.
+Login Info
+Sandbox URL
+https://sandbox.paypal.com
+Email
+sb-gse5m28227751@personal.example.com
+Password
+C<x3@}iZ
+Change password

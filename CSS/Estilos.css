@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 1s ease;
+}
+
+.login {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  text-align: center;
+}
+
+.show-password-button {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.content p {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+  font-weight: bold;
+}
+
+.home {
+  margin-top: 20px;
+}
+
+.account h2 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input i {
+  position: absolute;
+  top: 10%;
+  right: 5px; /* Modificado para mover los íconos al lado derecho */
+  transform: translateY(-50%);
+  color: #333;
+}
+
+.input input {
+  width: calc(100% - 23px); /* Modificado para ajustar el ancho del input */
+  padding: 25px;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  background: transparent;
+  color: #333;
+}
+
+.input label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #333;
+  transition: 0.5s;
+}
+
+.input input:focus + label,
+.input input:valid + label {
+  top: 0;
+  transform: translateY(0);
+  font-size: 12px;
+}
+
+.show-password-button {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.show-password-button:hover {
+  text-decoration: underline;
+}
+
+.button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.log {
+  margin-top: 20px;
+  color: #333;
+}
+
+.log a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.log a:hover {
+  text-decoration: underline;
+}

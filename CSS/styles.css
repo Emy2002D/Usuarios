@@ -1,0 +1,186 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.containerr {
+    background-color: #fc0404;
+    color: #ebeaea;
+    padding: 10px;
+}
+
+header {
+    background-color: #f50c0c;
+    color: #fffbfb;
+    padding: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f6f2f2;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#home img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Ajusta el margen inferior según necesites */
+}
+
+/* Estilos del menú */
+#menu {
+    background-color: rgb(246, 246, 201);
+    padding-top: 40px;
+}
+
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.menu-list li {
+    background-color: #dfdbdb37;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.menu-list li:hover {
+    transform: translateY(-5px);
+}
+
+.menu-list img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-list h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.menu-list p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.menu-list span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos del formulario de contacto */
+#contact {
+    background-color: #baa8a8;
+    padding: 40px 0;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #ed0d0d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Estilos de la animación */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Aplicar la animación a la clase "fadeIn" */
+.fadeIn {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Estilos adicionales */
+.container h2 {
+    margin-bottom: 20px;
+}
+
+.container h3 {
+    margin: 10px 0;
+}
+
+.container p {
+    margin: 0;
+}
+
+.container span {
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #333;
+    color: #908484;
+    padding: 10px;
+    text-align: center;
+}
